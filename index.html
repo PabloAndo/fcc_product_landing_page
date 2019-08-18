@@ -5,33 +5,165 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet" />
-    <link rel="stylesheet" href="css/style.min.css" />
+    <!-- Place your kit's code here -->
+    <script src="https://kit.fontawesome.com/9bcb5cdd5d.js"></script>
+    <link rel="stylesheet" href="css/style.css" />
     <title>fCC | Product Landing Page</title>
   </head>
   <body>
-    <header class="header" id="header">
-      <div class="header__logo-box">
-        <img
-          src="https://s3.amazonaws.com/freecodecamp/original_trombones.png"
-          alt="Company Logo"
-          class="header__logo"
-          id="header-img"
-        />
+    <div class="page-wrapper">
+      <header class="header" id="header">
+        <div class="header__logo-box">
+          <img
+            src="https://s3.amazonaws.com/freecodecamp/original_trombones.png"
+            alt="Company Logo"
+            class="header__logo"
+            id="header-img"
+          />
+        </div>
+        <nav class="navigation" id="nav-bar">
+          <ul class="navigation__list">
+            <li class="navigation__item">
+              <a href="#features" class="nav-link navigation__link">Features</a>
+            </li>
+            <li class="navigation__item">
+              <a href="#video-section" class="nav-link navigation__link">How It Works</a>
+            </li>
+            <li class="navigation__item">
+              <a href="#pricing" class="nav-link navigation__link">Pricing</a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+      <div class="container">
+        <section class="hero" id="hero">
+          <h2 class="hero__text">
+            Handcrafted, home-made masterpieces
+          </h2>
+          <div class="form" id="form" action="#">
+            <input
+              type="email"
+              class="form__email"
+              name="email"
+              id="email"
+              placeholder="Enter your email address"
+              required
+            />
+            <input type="submit" class="form__submit" id="submit" value="Get Started" />
+          </div>
+        </section>
+
+        <section class="features" id="features">
+          <div class="features__block">
+            <div class="features__icon">
+              <i class="fa fa-3x fa-fire"></i>
+            </div>
+            <div class="features__text">
+              <h2>Premium Materials</h2>
+              <p>
+                Our trombones use the shiniest brass which is sourced locally. This will increase the
+                longevity of your purchase.
+              </p>
+            </div>
+          </div>
+          <div class="features__block">
+            <div class="features__icon">
+              <i class="fa fa-3x fa-truck"></i>
+            </div>
+            <div class="features__text">
+              <h2>Fast Shipping</h2>
+              <p>
+                We make sure you recieve your trombone as soon as we have finished making it. We also provide
+                free returns if you are not satisfied.
+              </p>
+            </div>
+          </div>
+          <div class="features__block">
+            <div class="features__icon">
+              <i class="fa fa-3x fa-battery-full"></i>
+            </div>
+            <div class="features__text">
+              <h2>Quality Assurance</h2>
+              <p>
+                For every purchase you make, we will ensure there are no damages or faults and we will check
+                and test the pitch of your instrument.
+              </p>
+            </div>
+          </div>
+        </section>
+        <section class="section-video" id="video-section">
+          <iframe
+            src="https://www.youtube-nocookie.com/embed/y8Yv4pnO7qc?rel=0&controls=0&showinfo=0"
+            frameborder="0"
+            class="video"
+            id="video"
+            allowfullscreen
+          ></iframe>
+        </section>
+        <section class="pricing" id="pricing">
+          <div class="pricing__block">
+            <div class="pricing__title">
+              TENOR TROMBONE
+            </div>
+            <div class="pricing__prize">
+              <h2>$600</h2>
+            </div>
+            <ol class="pricing__list">
+              <li class="pricing__item">Lorem ipsum.</li>
+              <li class="pricing__item">Lorem ipsum.</li>
+              <li class="pricing__item">Lorem ipsum.</li>
+              <li class="pricing__item">Lorem ipsum.</li>
+            </ol>
+            <button class="pricing__button">Select</button>
+          </div>
+          <div class="pricing__block">
+            <div class="pricing__title">
+              BASS TROMBONE
+            </div>
+            <div class="pricing__prize">
+              <h2>$900</h2>
+            </div>
+            <ol class="pricing__list">
+              <li class="pricing__item">Lorem ipsum.</li>
+              <li class="pricing__item">Lorem ipsum.</li>
+              <li class="pricing__item">Lorem ipsum.</li>
+              <li class="pricing__item">Lorem ipsum.</li>
+            </ol>
+            <button class="pricing__button">Select</button>
+          </div>
+          <div class="pricing__block">
+            <div class="pricing__title">
+              VALVE TROMBONE
+            </div>
+            <div class="pricing__prize">
+              <h2>$1200</h2>
+            </div>
+            <ol class="pricing__list">
+              <li class="pricing__item">Lorem ipsum.</li>
+              <li class="pricing__item">Lorem ipsum.</li>
+              <li class="pricing__item">Lorem ipsum.</li>
+              <li class="pricing__item">Lorem ipsum.</li>
+            </ol>
+            <button class="pricing__button">Select</button>
+          </div>
+        </section>
+        <footer class="footer">
+          <ul class="footer__list">
+            <li class="footer__item">
+              <a href="#" class="footer__link">Privacy</a>
+            </li>
+            <li class="footer__item">
+              <a href="#" class="footer__link">Terms</a>
+            </li>
+            <li class="footer__item">
+              <a href="#" class="footer__link">Contact</a>
+            </li>
+          </ul>
+          <span class="footer__copyright">Copyright 2016, Original Trombones</span>
+        </footer>
       </div>
-      <nav class="navigation" id="nav-bar">
-        <!-- !Don't forget to redirect the links to each section-->
-        <ul class="navigation__list">
-          <li class="navigation__item">
-            <a href="#" class="nav-link navigation__link">Features</a>
-          </li>
-          <li class="navigation__item">
-            <a href="#" class="nav-link navigation__link">How It Works</a>
-          </li>
-          <li class="navigation__item">
-            <a href="#" class="nav-link navigation__link">Pricing</a>
-          </li>
-        </ul>
-      </nav>
-    </header>
+    </div>
   </body>
+
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 </html>
