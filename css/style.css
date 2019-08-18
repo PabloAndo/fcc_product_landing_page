@@ -124,6 +124,9 @@ body {
   justify-content: space-between;
   margin-bottom: 2rem;
   position: relative; }
+  @media only screen and (max-width: 500px) {
+    .pricing {
+      flex-direction: column; } }
   .pricing__block {
     border: 0.5px solid #000;
     margin: 0.5rem;

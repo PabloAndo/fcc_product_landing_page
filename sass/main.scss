@@ -178,6 +178,9 @@ body {
   justify-content: space-between;
   margin-bottom: 2rem;
   position: relative;
+  @media only screen and (max-width: 500px) {
+    flex-direction: column;
+  }
 
   &__block {
     border: 0.5px solid #000;
